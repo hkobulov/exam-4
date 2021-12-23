@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="h1 text-center">
+            Users api
+        </h1>
+        
+        <div class="api-area row d-flex justify-content-center flex-wrap">
+            <!-- Users -->
+            <div class="api-user col-10 col-sm-8 col-md-6 col-lg-4">
+                <h2 class="api-user__heading fs-3">
+                    Users
+                </h2>
+                
+                <p class="api-user__counting text-success">
+                    Count of users: 0
+                </p>
+                
+                <ul class="user-list list-unstyled"></ul>
+            </div>
+            
+            <!-- Posts -->
+            <div class="api-post col-10 col-sm-8 col-md-6 col-lg-4">
+                <h2 class="api-post__heading fs-3">
+                    Posts
+                </h2>
+                
+                <p class="api-post__counting text-success">
+                    Count of users: 0
+                </p>
+                
+                <ul class="post-list list-unstyled">
+                    <li class="post-list-item">
+                        <img class="d-block post-list-item-img" src="./images/Pulse-1s-200px.svg" alt="" width="50" height="50">
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Comments -->
+            <div class="api-comment col-10 col-sm-8 col-md-6 col-lg-4">
+                <h2 class="api-comment__heading fs-3">
+                    Comments
+                </h2>
+                
+                <p class="api-comment__counting text-success">
+                    Count of users: 0
+                </p>
+                
+                <ul class="comment-list list-unstyled">
+                    <li class="post-list-item">
+                        <img class="d-block post-list-item-img" src="./images/Pulse-1s-200px.svg" alt="" width="50" height="50">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Template -->
+    <!-- User -->
+    <template class="user-list-temp">
+        <li class="user-list__item border border-primary rounded p-2 mb-2">
+            <div class="user-list__mail-area d-flex mb-2">
+                <img src="./images/person.svg" alt="" width="25" height="25"> 
+                
+                <h3 class="user-list__heading fs-4 m-0 ms-2"></h3>
+            </div>
+            
+            <div class="user-list__mail-area d-flex mb-2">
+                <img src="./images/mail.svg" alt="" width="25" height="25">
+                <a class="user-list__mail text-decoration-none d-block ms-2" href="" target="_blank"></a>
+            </div>
+            
+            <div class="user-list__mail-area d-flex mb-2">
+                <img src="./images/company.svg" alt="" width="25" height="25">
+                
+                <p class="user-list__company m-0 ms-2"></p>  
+            </div>
+            
+            <div class="user-list__mail-area d-flex mb-2">
+                <img src="./images/map-pin.svg" alt="" width="25" height="25"> 
+                
+                <a class="user-list__address text-decoration-none d-block ms-2 text-secondary"
+                target="_blank"
+                href=""> 
+            </div>
+        </a>
+        
+        <button class="user-list__btn rounded btn-primary d-block">
+            Posts
+        </button>
+    </li>
+</template>
+
+<!-- Post -->
+<template class="post-list-temp">
+    <li class="post-list__item border border-primary rounded p-2 mb-2">
+        <h3 class="post-list__heading fs-4"></h3>
+        
+        <p class="post-list__desc fs-5"></p>
+        
+        <button class="post-list__btn bg-transparent rounded btn-primary text-info">
+            <img src="./images/comment.svg" alt="" width="25" height="25">
+            Comments
+        </button>
+    </li>
+</template>
+
+<!-- Comment -->
+<template class="comment-list-temp">
+    <li class="comment-list__item border border-primary rounded p-2 mb-2">
+        <div class="comment-list__mail-area d-flex mb-2">
+            <img src="./images/pencil.svg" alt="" width="25" height="25"> 
+            
+            <h3 class="comment-list__heading fs-4 m-0 ms-2"></h3>
+        </div>
+
+        <div class="comment-list__mail-area d-flex mb-2">
+            <img src="./images/mail.svg" alt="" width="25" height="25">
+            <a class="comment-list__mail text-decoration-none d-block ms-2" href="" target="_blank"></a>
+        </div>
+
+        <div class="comment-list__mail-area d-flex mb-2">
+            <img src="./images/post_it.svg" alt="" width="25" height="25">
+            
+            <p class="comment-list__desc m-0 ms-2"></p>  
+        </div>
+    </li>
+</template>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

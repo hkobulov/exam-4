@@ -1,0 +1,33 @@
+.user-list, .post-list, .comment-list {
+    position: relative;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 7px;
+    background-color: #ffe;
+    border-radius: 8px;
+}
+
+.user-list::-webkit-scrollbar, .post-list::-webkit-scrollbar, .comment-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.user-list::-webkit-scrollbar-thumb, .post-list::-webkit-scrollbar-thumb, .comment-list::-webkit-scrollbar-thumb {
+    height: 25px;
+    background: rgb(136, 3, 3);
+    border-radius: 20px;
+}
+
+.user-list::-webkit-scrollbar-track, .post-list::-webkit-scrollbar-track, .comment-list::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.post-list-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.post-list-item-img {
+    margin: auto;
+}
